@@ -1,0 +1,14 @@
+.card_hover{
+    transition: all .5s ease-in-out;
+    border-radius:10px;
+    height:550px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.card_hover:hover{
+    background: #fff;
+    box-shadow: 5px 5px 40px grey;
+}
+.cart_dec:hover{
+    text-decoration:none;
+}

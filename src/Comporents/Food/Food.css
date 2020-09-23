@@ -1,0 +1,16 @@
+.food_area{
+    text-align: center;
+    padding: 20px 0;
+}
+.menu_list{
+    font-size: 20px;
+    margin: 0 20px;
+    font-weight: 500;
+    color: #000000;
+    transition: all .5s ease-in-out;
+    
+}
+.menu_list:hover{
+    color: #FA3C60;
+    text-decoration: none;
+}

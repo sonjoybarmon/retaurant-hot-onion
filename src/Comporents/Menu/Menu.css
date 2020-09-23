@@ -1,0 +1,16 @@
+.logo-img img{
+    height: 50px;
+}
+.menu_btn{
+    margin:0 20px;
+}
+.color-btn{
+    background:#F91944;
+    padding:5px 15px;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.color-btn:hover{
+    color:#fff;
+}
