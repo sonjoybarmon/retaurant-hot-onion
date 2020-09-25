@@ -17,7 +17,7 @@ const Lunch = () => {
                                         <Card.Body className='text-center'>
                                             <Card.Title>{lunch.name}</Card.Title>
                                             <Card.Text>{lunch.shortDescription}</Card.Text>
-                                            <Card.Text>$ {lunch.price}</Card.Text>
+                                            <Card.Text><h1>$ {lunch.price}</h1> </Card.Text>
                                         </Card.Body>
                                     </div>
                                 </Card>

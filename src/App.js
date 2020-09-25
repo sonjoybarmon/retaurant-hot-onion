@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -17,10 +17,23 @@ import Dinner from './Comporents/Dinner/Dinner';
 import NotFound from './Comporents/NotFound/NotFound';
 import FoodDetails from './Comporents/FoodDetails/FoodDetails';
 import Login from './Comporents/Login/Login';
+import PrivateRoute from './Comporents/PrivateRoute/PrivateRoute';
+import Delivery from './Comporents/Delivery/Delivery';
+
+export const UserContext = createContext();
 
 function App() {
+  const [logInUser , setLogInUser] = useState({
+    isSignIn : false,
+    name :'',
+    email:'',
+    photo :'',
+    password :'',
+    confirmPassword :'',
+    message :'',
+  })
   return (
-    <>
+    <UserContext.Provider value={[logInUser,setLogInUser]}>
     <Router>
         <Switch>
             <Route exact path="/">
@@ -43,6 +56,10 @@ function App() {
                 <Home></Home>
                 <Dinner></Dinner>
             </Route>
+            <PrivateRoute path="/delivery/:id">
+                <Menu />
+                <Delivery></Delivery>
+            </PrivateRoute>
             <Route path="/foodDetails/:id">
                 <Menu />
                 <FoodDetails />
@@ -56,7 +73,7 @@ function App() {
             </Route>
         </Switch>
     </Router>
-    </>
+    </UserContext.Provider>
   );
 }
 

@@ -19,7 +19,7 @@ const BreakFast = (props) => {
                                 <Card.Body className='text-center'>
                                     <Card.Title>{breakfast.name}</Card.Title>
                                     <Card.Text>{breakfast.shortDescription}</Card.Text>
-                                    <Card.Text>$ {breakfast.price}</Card.Text>
+                                    <Card.Text><h1>$ {breakfast.price}</h1> </Card.Text>
                                 </Card.Body>
                             </div>
                         </Card>

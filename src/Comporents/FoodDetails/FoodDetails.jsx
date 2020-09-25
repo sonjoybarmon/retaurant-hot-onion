@@ -27,8 +27,8 @@ const FoodDetails = (props) => {
                                 <button className='btn btn-primary'> + </button>
                             </div>
                         </div>
-                       <Link to='/login'>
-                       <button className='btn btn-info'>ADD CART</button>
+                       <Link to={`/delivery/${exactFood.id}`}>
+                            <button className='btn btn-info'>ADD CART</button>
                        </Link> 
                     </div>
                 </div>
